@@ -30,7 +30,7 @@ const App = () => {
       widget={Container({
         alignment: Alignment.center,
         color: 'lightblue',
-        child: Text("Hello, Flitter!", style: TextStyle({ fontSize: 30, weight: 'bold' }))
+        child: Text("Hello, Flitter!", { style: new TextStyle({ fontSize: 30, weight: 'bold' })})
       })}
     />
   );
@@ -43,7 +43,7 @@ const App = () => {
 npm i @meursyphus/flitter @meursyphus/flitter-svelte
 ```
 
-```svelte
+```javascript
 <script>
   import { Container, Alignment, Text, TextStyle } from '@meursyphus/flitter';
   import Widget from '@meursyphus/flitter-svelte';
@@ -55,7 +55,7 @@ npm i @meursyphus/flitter @meursyphus/flitter-svelte
   widget={Container({
     alignment: Alignment.center,
     color: 'lightblue',
-    child: Text("Hello, Flitter!", style: TextStyle({ fontSize: 30, weight: 'bold' }))
+    child: Text("Hello, Flitter!", { style: new TextStyle({ fontSize: 30, weight: 'bold' })})
   })}
 />
 ```

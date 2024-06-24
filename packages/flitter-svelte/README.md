@@ -8,19 +8,19 @@ For more details, visit [here](https://flitter.pages.dev).
 npm i @meursyphus/flitter @meursyphus/flitter-svelte
 ```
 
-```svelte
+```javascript
 <script>
-  import { Container, Alignment, Text, TextStyle } from '@meursyphus/flitter';
-  import Widget from '@meursyphus/flitter-svelte';
+	import { Container, Alignment, Text, TextStyle } from '@meursyphus/flitter';
+	import Widget from '@meursyphus/flitter-svelte';
 </script>
 
 <Widget
-  width="600px"
-  height="300px"
-  widget={Container({
-    alignment: Alignment.center,
-    color: 'lightblue',
-    child: Text("Hello, Flitter!", style: TextStyle({ fontSize: 30, weight: 'bold' }))
-  })}
+	width="600px"
+	height="300px"
+	widget={Container({
+		alignment: Alignment.center,
+		color: 'lightblue',
+		child: Text('Hello, Flitter!', { style: new TextStyle({ fontSize: 30, weight: 'bold' }) })
+	})}
 />
 ```
